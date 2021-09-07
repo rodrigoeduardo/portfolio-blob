@@ -1,4 +1,5 @@
-import { Flex, Image, Link, Stack, FlexProps } from '@chakra-ui/react';
+import { Flex, Image, Stack, FlexProps } from '@chakra-ui/react';
+import { HeaderLink } from './HeaderLink';
 
 interface HeaderProps extends FlexProps {}
 
@@ -18,31 +19,9 @@ export function Header({ ...rest }: HeaderProps) {
       <Image src="assets/icons/blob-circle-black.svg" w="80px" h="80px" />
 
       <Stack direction="row" spacing="10rem" fontWeight="medium">
-        <Link
-          href="#portfolio"
-          fontSize="2.4rem"
-          textTransform="uppercase"
-          fontWeight="bold"
-          style={{ textDecoration: 'none', transition: 'all .2s' }}
-          _hover={{
-            filter: 'brightness(0.9)',
-          }}
-        >
-          portfolio
-        </Link>
+        <HeaderLink href="#portfolio">portfolio</HeaderLink>
 
-        <Link
-          href="#contato"
-          fontSize="2.4rem"
-          textTransform="uppercase"
-          fontWeight="bold"
-          style={{ textDecoration: 'none', transition: 'all .2s' }}
-          _hover={{
-            filter: 'brightness(0.9)',
-          }}
-        >
-          contato
-        </Link>
+        <HeaderLink href="#contato">contato</HeaderLink>
       </Stack>
     </Flex>
   );
