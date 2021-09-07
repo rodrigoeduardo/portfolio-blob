@@ -1,5 +1,6 @@
 import { Box, Flex, Text, Image, Link, VStack, Divider, Center } from '@chakra-ui/react';
 import { Header } from '../components/Header';
+import { SocialMediaLink } from '../components/socialMediaLink';
 
 export default function Home() {
   return (
@@ -32,35 +33,11 @@ export default function Home() {
         </Flex>
 
         <VStack position="absolute" left="4" bottom="0" spacing="3.5rem">
-          <Link
-            href="#github"
-            _focus={{ boxShadow: 'none' }}
-            transitionProperty="all"
-            transitionDelay="2"
-            _hover={{ transform: 'scale(1.1)' }}
-          >
-            <Image src="assets/icons/github.svg" />
-          </Link>
+          <SocialMediaLink href="#github" imgSrc="assets/icons/github.svg" />
 
-          <Link
-            href="#instagram"
-            _focus={{ boxShadow: 'none' }}
-            transitionProperty="all"
-            transitionDelay="2"
-            _hover={{ transform: 'scale(1.1)' }}
-          >
-            <Image src="assets/icons/instagram.svg" />
-          </Link>
+          <SocialMediaLink href="#instagram" imgSrc="assets/icons/instagram.svg" />
 
-          <Link
-            href="#linkedin"
-            _focus={{ boxShadow: 'none' }}
-            transitionProperty="all"
-            transitionDelay="2"
-            _hover={{ transform: 'scale(1.1)' }}
-          >
-            <Image src="assets/icons/linkedin.svg" />
-          </Link>
+          <SocialMediaLink href="#linkedin" imgSrc="assets/icons/linkedin.svg" />
         </VStack>
 
         <VStack position="absolute" bottom="0" right="4" spacing="5rem">
