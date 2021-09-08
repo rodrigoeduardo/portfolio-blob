@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import { Link, LinkProps } from "@chakra-ui/react";
 
 interface HeaderLinkProps extends LinkProps {
     href: string,
-    children: string
+    children: ReactNode
 }
 
 export function HeaderLink({ href, children, ...rest }: HeaderLinkProps) {
