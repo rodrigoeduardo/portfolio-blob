@@ -1,11 +1,11 @@
 import { Image, Link, LinkProps } from "@chakra-ui/react";
 
-interface SocialMediaLinkProps extends LinkProps {
+interface ImageLinkProps extends LinkProps {
     href: string,
     imgSrc: string
 }
 
-export function SocialMediaLink({ href, imgSrc, ...rest }: SocialMediaLinkProps) {
+export function ImageLink({ href, imgSrc, ...rest }: ImageLinkProps) {
     return (
         <Link
             href={href}
