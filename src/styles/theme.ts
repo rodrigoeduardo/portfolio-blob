@@ -23,6 +23,7 @@ export const theme = extendTheme({
     global: {
       html: {
         fontSize: '62.5%',
+        scrollBehavior: 'smooth'
       },
       body: {
         bg: 'gray.900',
