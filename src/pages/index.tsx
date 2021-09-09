@@ -1,4 +1,5 @@
-import { Box, Flex, Text, Image, Link, VStack, Divider, Center } from '@chakra-ui/react';
+import { Box, Flex, Text, Image, VStack, Divider, Center } from '@chakra-ui/react';
+import { Carousel } from '../components/Carousel';
 import { Header } from '../components/Header';
 import { ImageLink } from '../components/ImageLink';
 
@@ -54,6 +55,14 @@ export default function Home() {
             <Divider orientation="vertical" />
           </Center>
         </VStack>
+      </Box>
+
+      <Box id="portfolio" position="relative" h="100vh" marginX="auto" mt="8rem" bg="gray.100">
+        <Carousel />
+      </Box>
+
+      <Box id="contato" position="relative" h="100vh" marginX="auto" mt="8rem">
+  
       </Box>
     </Box>
   );
