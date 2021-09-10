@@ -5,37 +5,35 @@ import 'swiper/css';
 
 export function Carousel() {
     return (
-        <Box color="red" maxW="400px" marginX="auto">
+        <Box align="center">
           <Swiper
-            slidesPerView={3}
             spaceBetween={0}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-            loop={true}
             centeredSlides={true}
-            focusableElements="button"
-            initialSlide={1}
+            slidesPerView={3}
+            loop={true}
             slideToClickedSlide={true}
           >
             <SwiperSlide>
               <Image
-                src="https://github.com/martinsvinicius.png"
-                borderRadius="50%"
-                boxSize={40}
+                src="https://github.com/rodrigoeduardo.png"
+                borderRadius="5rem"
+                boxSize={400}
               />
             </SwiperSlide>
+
             <SwiperSlide>
               <Image
-                  src="https://github.com/rodrigoeduardo.png"
-                  borderRadius="50%"
-                  boxSize={40}
-                />
+                src="https://github.com/martinsvinicius.png"
+                borderRadius="5rem"
+                boxSize={400}
+              />
             </SwiperSlide>
+            
             <SwiperSlide>
               <Image
                 src="https://github.com/joaoifrn.png"
-                borderRadius="50%"
-                boxSize={40}
+                borderRadius="5rem"
+                boxSize={400}
               />
             </SwiperSlide>
           </Swiper>
