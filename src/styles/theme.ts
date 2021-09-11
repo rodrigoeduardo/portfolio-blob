@@ -16,8 +16,8 @@ export const theme = extendTheme({
     },
   },
   fonts: {
-    heading: 'Bubbble',
-    body: 'Bubbble',
+    heading: 'Bubbble, Arial, sans-serif',
+    body: 'Bubbble, Arial, sans-serif',
   },
   styles: {
     global: {
