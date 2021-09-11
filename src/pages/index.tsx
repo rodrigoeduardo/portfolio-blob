@@ -8,7 +8,7 @@ export default function Home() {
     <Box as="main">
       <Header />
 
-      <Box position="relative" h="75vh" maxWidth="1440px" marginX="auto">
+      <Box position="relative" h="78vh" maxWidth="1440px" marginX="auto">
         <Flex
           h="100%"
           direction="column"
@@ -57,13 +57,21 @@ export default function Home() {
         </VStack>
       </Box>
 
-      <Box id="portfolio" position="relative" h="100vh" marginX="auto" mt="8rem" bg="gray.100">
+      <Box
+        id="portfolio"
+        mt="8rem"
+        bg="gray.100"
+      >
         <Carousel />
       </Box>
 
-      <Box id="contato" position="relative" h="100vh" marginX="auto" mt="8rem">
-  
-      </Box>
+      <Box
+        id="contato"
+        position="relative"
+        h="100vh"
+        marginX="auto"
+        mt="8rem"
+      ></Box>
     </Box>
   );
 }

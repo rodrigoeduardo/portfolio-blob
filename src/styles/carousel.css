@@ -1,13 +1,3 @@
-.swiper-slide-active img {
-    width: 40rem;
-    height: 40rem;
-}
-
 .swiper-wrapper {
     align-items: baseline;
-    margin-top: 30px;
-}
-
-.swiper-slide-prev, .swiper-slide-next {
-    filter: blur(6px);
 }
