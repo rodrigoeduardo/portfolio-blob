@@ -17,7 +17,7 @@ export default function Home() {
           position="relative"
         >
           <Text as="h1">
-            <Image src="assets/images/blob-logo-gray.png" draggable="false" />
+            <Image src="assets/images/blob-logo-new-dark.png" w="717px" h="251px" draggable="false" />
 
             <Text
               as="span"
