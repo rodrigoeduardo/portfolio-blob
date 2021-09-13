@@ -16,7 +16,7 @@ export function Header({ ...rest }: HeaderProps) {
       height="8.4rem"
       {...rest}
     >
-      <Image src="assets/icons/blob-circle-black.svg" w="80px" h="80px" />
+      <Image src="assets/icons/blob-circle-gray.svg" w="80px" h="80px" />
 
       <Stack direction="row" spacing="10rem" fontWeight="medium">
         <HeaderLink href="#portfolio">portfolio</HeaderLink>
