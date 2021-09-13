@@ -15,7 +15,7 @@ export function HeaderLink({ href, children, ...rest }: HeaderLinkProps) {
           fontWeight="bold"
           style={{ textDecoration: 'none', transition: 'all .2s' }}
           _hover={{
-            filter: 'brightness(0.9)',
+            color: 'purple.300',
           }}
           {...rest}
         >
