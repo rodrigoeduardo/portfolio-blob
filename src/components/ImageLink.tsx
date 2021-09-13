@@ -12,7 +12,8 @@ export function ImageLink({ href, imgSrc, ...rest }: ImageLinkProps) {
             _focus={{ boxShadow: 'none' }}
             transitionProperty="all"
             transitionDelay="2"
-            _hover={{ transform: 'scale(1.1)' }}
+            target="_blank"
+            _hover={{ transform: "scale(1.1)" }}
             {...rest}
           >
             <Image src={imgSrc} />
