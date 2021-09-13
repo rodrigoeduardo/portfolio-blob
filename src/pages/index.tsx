@@ -1,5 +1,6 @@
 import { Box, Flex, Text, Image, VStack, Divider, Center } from '@chakra-ui/react';
 import { Carousel } from '../components/Carousel';
+import { Contact } from '../components/Contact';
 import { Header } from '../components/Header';
 import { ImageLink } from '../components/ImageLink';
 
@@ -70,12 +71,10 @@ export default function Home() {
 
       <Box
         id="contato"
-        position="relative"
         h="100vh"
         marginX="auto"
-        mt="8rem"
       >
-        Contato
+        <Contact />
       </Box>
     </Box>
   );
