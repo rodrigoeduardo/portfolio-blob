@@ -37,11 +37,11 @@ export default function Home() {
         </Flex>
 
         <VStack position="absolute" left="4" bottom="0" spacing="3.5rem">
-          <ImageLink href="#github" imgSrc="assets/icons/github.svg" />
+          <ImageLink href="https://github.com/blobteam" imgSrc="assets/icons/github.svg" />
 
-          <ImageLink href="#instagram" imgSrc="assets/icons/instagram.svg" />
+          <ImageLink href="https://www.instagram.com/blob.team/" imgSrc="assets/icons/instagram.svg" />
 
-          <ImageLink href="#linkedin" imgSrc="assets/icons/linkedin.svg" />
+          <ImageLink href="https://www.linkedin.com/company/blobteam" imgSrc="assets/icons/linkedin.svg" />
         </VStack>
 
         <VStack position="absolute" bottom="0" right="4" spacing="5rem">
@@ -74,7 +74,9 @@ export default function Home() {
         h="100vh"
         marginX="auto"
         mt="8rem"
-      ></Box>
+      >
+        Contato
+      </Box>
     </Box>
   );
 }
