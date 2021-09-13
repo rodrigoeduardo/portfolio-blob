@@ -1,4 +1,5 @@
-import { Box, Flex, Text, Image, Link, VStack, Divider, Center } from '@chakra-ui/react';
+import { Box, Flex, Text, Image, VStack, Divider, Center } from '@chakra-ui/react';
+import { Carousel } from '../components/Carousel';
 import { Header } from '../components/Header';
 import { ImageLink } from '../components/ImageLink';
 
@@ -7,7 +8,7 @@ export default function Home() {
     <Box as="main">
       <Header />
 
-      <Box position="relative" h="75vh" maxWidth="1440px" marginX="auto">
+      <Box position="relative" h="78vh" maxWidth="1440px" marginX="auto">
         <Flex
           h="100%"
           direction="column"
@@ -16,7 +17,7 @@ export default function Home() {
           position="relative"
         >
           <Text as="h1">
-            <Image src="assets/images/blob-logo-gray.png" draggable="false" />
+            <Image src="assets/images/blob-logo-new-dark.png" w="717px" h="251px" draggable="false" />
 
             <Text
               as="span"
@@ -24,7 +25,10 @@ export default function Home() {
               ml="50%"
               fontSize="1.8rem"
               letterSpacing="0.3rem"
-              color="#d1d2dc65"
+              color="purple.300"
+              style={{
+                filter: "brightness(0.85)"
+              }}
               userSelect="none"
             >
               A WEB <br /> DEVELOPMENT TEAM
@@ -33,11 +37,11 @@ export default function Home() {
         </Flex>
 
         <VStack position="absolute" left="4" bottom="0" spacing="3.5rem">
-          <ImageLink href="#github" imgSrc="assets/icons/github.svg" />
+          <ImageLink href="https://github.com/blobteam" imgSrc="assets/icons/github.svg" />
 
-          <ImageLink href="#instagram" imgSrc="assets/icons/instagram.svg" />
+          <ImageLink href="https://www.instagram.com/blob.team/" imgSrc="assets/icons/instagram.svg" />
 
-          <ImageLink href="#linkedin" imgSrc="assets/icons/linkedin.svg" />
+          <ImageLink href="https://www.linkedin.com/company/blobteam" imgSrc="assets/icons/linkedin.svg" />
         </VStack>
 
         <VStack position="absolute" bottom="0" right="4" spacing="5rem">
@@ -54,6 +58,24 @@ export default function Home() {
             <Divider orientation="vertical" />
           </Center>
         </VStack>
+      </Box>
+
+      <Box
+        id="portfolio"
+        mt="8rem"
+        bg="gray.100"
+      >
+        <Carousel />
+      </Box>
+
+      <Box
+        id="contato"
+        position="relative"
+        h="100vh"
+        marginX="auto"
+        mt="8rem"
+      >
+        Contato
       </Box>
     </Box>
   );
