@@ -16,6 +16,7 @@ export function Slider() {
             isActive={isActive}
             title="WEBSITE IBRA"
             description="Desenvolvido com as tecnologias mais atuais do mercado."
+            link="https://ibra.vercel.app"
             imgSrc="assets/images/portfolio/mockup-ibra.svg"
           />
         )}
@@ -27,7 +28,8 @@ export function Slider() {
             isActive={isActive}
             title="WEBSITE IBRA"
             description="Desenvolvido com as tecnologias mais atuais do mercado."
-            imgSrc="https://github.com/rodrigoeduardo.png"
+            link="https://ibra.vercel.app"
+            imgSrc="assets/images/portfolio/mockup-ibra.svg"
           />
         )}
       </SwiperSlide>
@@ -38,7 +40,8 @@ export function Slider() {
             isActive={isActive}
             title="WEBSITE IBRA"
             description="Desenvolvido com as tecnologias mais atuais do mercado."
-            imgSrc="https://github.com/rodrigoeduardo.png"
+            link="https://ibra.vercel.app"
+            imgSrc="assets/images/portfolio/mockup-ibra.svg"
           />
         )}
       </SwiperSlide>
