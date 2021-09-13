@@ -25,7 +25,10 @@ export default function Home() {
               ml="50%"
               fontSize="1.8rem"
               letterSpacing="0.3rem"
-              color="#d1d2dc65"
+              color="purple.300"
+              style={{
+                filter: "brightness(0.85)"
+              }}
               userSelect="none"
             >
               A WEB <br /> DEVELOPMENT TEAM
