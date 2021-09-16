@@ -1,9 +1,10 @@
-import { Stack } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
+import { ContactForm } from "./ContactForm";
 import { TeamMember } from "./TeamMember";
 
 export function Contact() {
     return (
-        <>
+        <Flex h="100%" justify="space-evenly" align="center">
             <Stack direction="column" spacing="8rem">
                 <TeamMember
                     avatarUrl="assets/images/teamMembers/rodrigo.jpg"
@@ -28,6 +29,8 @@ export function Contact() {
                     linkedinUrl="https://www.linkedin.com/in/mariaeduluz"
                 />
             </Stack>
-        </>
+
+            <ContactForm />
+        </Flex>
     )
 }
