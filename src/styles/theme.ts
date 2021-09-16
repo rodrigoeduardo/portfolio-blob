@@ -4,6 +4,7 @@ export const theme = extendTheme({
   colors: {
     gray: {
       '900': '#0D0712',
+      '900-80': '#0D071280',
       '800': '#1F2029',
       '700': '#353646',
       '600': '#4B4D63',
@@ -12,6 +13,7 @@ export const theme = extendTheme({
       '300': '#9699B0',
       '200': '#B3B5C6',
       '100': '#D1D2DC',
+      '100-50': '#D1D2DC50',
       '50': '#EEEEF2',
     },
     purple: {
