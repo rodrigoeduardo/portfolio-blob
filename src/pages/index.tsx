@@ -9,7 +9,7 @@ export default function Home() {
     <Box as="main">
       <Header />
 
-      <Box position="relative" h="78vh" maxWidth="1440px" marginX="auto">
+      <Box position="relative" h="78vh" mb="8rem" maxWidth="1440px" marginX="auto">
         <Flex
           h="100%"
           direction="column"
@@ -63,7 +63,7 @@ export default function Home() {
 
       <Box
         id="portfolio"
-        mt="8rem"
+        h="100vh"
         bg="gray.100"
       >
         <Carousel />

@@ -1,10 +1,10 @@
-import { Box } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/layout';
 import { Slider } from './Slider';
 
 export function Carousel() {
   return (
-    <Box align="center" py="20vh">
+    <Flex textAlign="center" alignItems="center" justifyContent="center" h="100%" flexDir="column">
       <Slider />
-    </Box>
+    </Flex>
   );
 }
