@@ -1,5 +1,5 @@
 import { Flex, Stack } from "@chakra-ui/react";
-import { ContactForm } from "./ContactForm";
+import { ContactFormSection } from "./ContactFormSection";
 import { TeamMember } from "./TeamMember";
 
 export function Contact() {
@@ -30,7 +30,7 @@ export function Contact() {
                 />
             </Stack>
 
-            <ContactForm />
+            <ContactFormSection />
         </Flex>
     )
 }
