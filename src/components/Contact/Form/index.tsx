@@ -1,8 +1,13 @@
-import { Box, Stack, Textarea, Button } from '@chakra-ui/react';
+import { Box, Stack, Button } from '@chakra-ui/react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { toast } from 'react-toastify';
+
+import { EmailjsParams, emailjsApi } from '../../../services/emailjs';
+
 import { Input } from './Input';
+import { Textarea } from './Textarea';
 
 type FormData = {
   name: string;
@@ -22,7 +27,33 @@ export function Form() {
   } as any);
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
-    console.log(data);
+    
+    try {
+
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+      const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string;
+
+      const dataRequest: EmailjsParams = {
+        service_id: serviceId,
+        template_id: templateId,
+        user_id: userId,
+        template_params: data
+      };
+
+      await emailjsApi.post('/email/send', dataRequest);
+      
+    } catch (error) {
+
+      toast.error('Erro ao enviar o e-mail!');
+      console.log(error);
+
+    } finally {
+
+      toast.success('Sucesso ao enviar o e-mail!');
+      reset();
+
+    }
   };
 
   return (
