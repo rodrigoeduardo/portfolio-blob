@@ -1,4 +1,4 @@
-import { Text, Box, Image, Button } from '@chakra-ui/react';
+import { Flex, Text, Box, Image, Button } from '@chakra-ui/react';
 
 interface SliderItemProps {
   isActive: boolean;
@@ -16,7 +16,10 @@ export function SliderItem({
   link,
 }: SliderItemProps) {
   return (
-    <Box
+    <Flex
+      flexDir="column"
+      alignItems="center"
+      justifyContent="center"
       style={{
         filter: isActive ? '' : 'blur(3px)',
       }}
@@ -62,6 +65,6 @@ export function SliderItem({
             VER PROJETO
         </Button>
       )}
-    </Box>
+    </Flex>
   );
 }
