@@ -1,4 +1,6 @@
 import {
+  FormControl,
+  FormErrorMessage,
   Input as ChakraInput,
   InputProps as ChakraInputProps,
 } from '@chakra-ui/react';
@@ -13,32 +15,38 @@ interface InputProps extends ChakraInputProps {
 }
 
 const InputComponent: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { name, type, placeholder, ...rest },
+  { name, type, error, placeholder, ...rest },
   ref
 ) => {
   return (
-    <ChakraInput
-      name={name}
-      type={type}
-      placeholder={placeholder}
-      _placeholder={{
-        color: 'gray.100-50',
-      }}
-      _hover={{
-        borderColor: 'purple.300',
-      }}
-      borderColor="transparent"
-      focusBorderColor="purple.300"
-      bg="gray.900-80"
-      maxW="46.6rem"
-      borderRadius="20px"
-      h="5.5rem"
-      py="1.7rem"
-      px="3rem"
-      fontSize="1.8rem"
-      ref={ref}
-      {...rest}
-    />
+    <FormControl isInvalid={!!error}>
+      <ChakraInput
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        _placeholder={{
+          color: 'gray.100-50',
+        }}
+        _hover={{
+          borderColor: 'purple.300',
+        }}
+        borderColor="transparent"
+        focusBorderColor="purple.300"
+        bg="gray.900-80"
+        maxW="46.6rem"
+        borderRadius="20px"
+        h="5.5rem"
+        py="1.7rem"
+        px="3rem"
+        fontSize="1.8rem"
+        ref={ref}
+        {...rest}
+      />
+
+      { !!error && (
+          <FormErrorMessage fontSize="1.5rem">{error.message}</FormErrorMessage>
+      ) }
+    </FormControl>
   );
 };
 
