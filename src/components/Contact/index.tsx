@@ -4,8 +4,8 @@ import { TeamMember } from "./TeamMember";
 
 export function Contact() {
     return (
-        <Flex h="100%" justify="space-evenly" align="center">
-            <Stack direction="column" spacing="8rem">
+        <Flex flexDir={{ base: "column", md: "row" }} h="100%" justify={{ base: "start", md: "space-evenly" }} align="center">
+            <Stack direction="column" spacing="8rem" mt={{ base: "8rem", md: "0" }}>
                 <TeamMember
                     avatarUrl="assets/images/teamMembers/rodrigo.jpg"
                     name="Rodrigo Eduardo"
