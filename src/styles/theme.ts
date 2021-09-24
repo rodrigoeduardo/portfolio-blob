@@ -39,7 +39,10 @@ export const theme = extendTheme({
   styles: {
     global: {
       html: {
-        fontSize: '62.5%',
+        fontSize: {
+          base: "37.5%",
+          lg: "50%"
+        },
         scrollBehavior: 'smooth'
       },
       body: {
