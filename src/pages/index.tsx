@@ -82,7 +82,7 @@ export default function Home() {
 
         <Box
           id="contato"
-          h="100vh"
+          h={{ base: "", md: "100vh" }}
           marginX="auto"
         >
           <Contact />
