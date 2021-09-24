@@ -20,8 +20,8 @@ export function TeamMember({ avatarUrl, name, role, linkedinUrl, githubUrl }: Te
                 <Text color="purple.300" fontSize="2.4rem" fontWeight="medium">{role}</Text>
 
                 <Flex mt="2.5rem">
-                    <ImageLink href={linkedinUrl} imgSrc="assets/icons/linkedin.svg" />
-                    {!!githubUrl && <ImageLink href={githubUrl} imgSrc="assets/icons/github.svg" ml="2.8rem" />}
+                    <ImageLink href={linkedinUrl} imgAltText="LinkedIn" imgSrc="assets/icons/linkedin.svg" />
+                    {!!githubUrl && <ImageLink href={githubUrl} imgAltText="GitHub" imgSrc="assets/icons/github.svg" ml="2.8rem" />}
                 </Flex>
             </Flex>
         </Flex>

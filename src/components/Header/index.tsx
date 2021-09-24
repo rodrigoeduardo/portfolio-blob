@@ -16,7 +16,7 @@ export function Header({ ...rest }: HeaderProps) {
       height="8.4rem"
       {...rest}
     >
-      <Image src="assets/icons/blob-circle-gray.svg" w="10rem" h="10rem" />
+      <Image src="assets/icons/blob-circle-gray.svg" alt="Blob Team logo" w="10rem" h="10rem" />
 
       <Stack direction="row" spacing={{ base: "5rem", md: "10rem" }} fontWeight="medium">
         <HeaderLink href="#portfolio">portfolio</HeaderLink>
