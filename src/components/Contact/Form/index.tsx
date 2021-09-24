@@ -22,7 +22,7 @@ const sendMessageFormSchema = Yup.object().shape({
 })
 
 export function Form() {
-  const { register, reset, handleSubmit, formState: { errors } } = useForm<FormData>({
+  const { register, reset, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: yupResolver(sendMessageFormSchema)
   } as any);
 
@@ -61,6 +61,7 @@ export function Form() {
           name="name"
           type="text"
           placeholder="Seu nome"
+          isDisabled={ isSubmitting }
           error={errors.name}
           {...register('name')}
         />
@@ -69,16 +70,19 @@ export function Form() {
           name="email"
           type="email"
           placeholder="Seu melhor e-mail"
+          isDisabled={ isSubmitting }
           error={errors.email}
           {...register('email')}
         />
 
         <Textarea
+          isDisabled={ isSubmitting }
           error={errors.message}
           {...register('message')}
         />
 
         <Button
+          isLoading={ isSubmitting }
           bg="gray.900-80"
           w="46.6rem"
           h="5.5rem"
