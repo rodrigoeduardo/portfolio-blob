@@ -15,9 +15,10 @@ export default class MyDocument extends Document {
 
           <meta property="og:url"                content="https://blobteam.tech" />
           <meta property="og:type"               content="website" />
-          <meta property="og:title"              content="Blob Team - Portfólio" />
+          <meta property="og:title"              content="Blob Team - Portfolio" />
           <meta property="og:description"        content="A web development team." />
           <meta property="og:image"              content="https://media-exp1.licdn.com/dms/image/C4E0BAQFy68xj5OiETg/company-logo_200_200/0/1632447900442?e=1640822400&v=beta&t=pjqwNMWjrEl6nDfbD638LqijbhmTNQLi_xFzX_68YDo" />
+          <meta property="og:image:alt"          content="Blob Team logo" />
         </Head>
 
         <body>
