@@ -7,7 +7,7 @@ export function Header({ ...rest }: HeaderProps) {
   return (
     <Flex
       as="header"
-      maxWidth="1440px"
+      maxWidth="80vw"
       marginX="auto"
       justify="space-between"
       align="center"
@@ -16,9 +16,9 @@ export function Header({ ...rest }: HeaderProps) {
       height="8.4rem"
       {...rest}
     >
-      <Image src="assets/icons/blob-circle-black.svg" w="80px" h="80px" />
+      <Image src="assets/icons/blob-circle-gray.svg" w="10rem" h="10rem" />
 
-      <Stack direction="row" spacing="10rem" fontWeight="medium">
+      <Stack direction="row" spacing={{ base: "5rem", md: "10rem" }} fontWeight="medium">
         <HeaderLink href="#portfolio">portfolio</HeaderLink>
 
         <HeaderLink href="#contato">contato</HeaderLink>
