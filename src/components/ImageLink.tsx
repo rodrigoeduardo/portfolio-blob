@@ -16,7 +16,7 @@ export function ImageLink({ href, imgSrc, ...rest }: ImageLinkProps) {
             _hover={{ transform: "scale(1.1)" }}
             {...rest}
           >
-            <Image src={imgSrc} />
+            <Image src={imgSrc} boxSize="4.125rem" />
         </Link>
     )
 }
