@@ -15,7 +15,7 @@ export default function Home() {
       <Box as="main">
         <Header />
 
-        <Box position="relative" h="78vh" mb="8rem" maxWidth="1440px" marginX="auto">
+        <Box position="relative" h={{ base: "85vh", md: "78vh" }} mb="8rem" maxWidth="80vw" marginX="auto">
           <Flex
             h="100%"
             direction="column"
