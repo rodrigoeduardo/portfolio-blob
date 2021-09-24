@@ -2,10 +2,11 @@ import { Image, Link, LinkProps } from "@chakra-ui/react";
 
 interface ImageLinkProps extends LinkProps {
     href: string,
-    imgSrc: string
+    imgSrc: string,
+    imgAltText: string
 }
 
-export function ImageLink({ href, imgSrc, ...rest }: ImageLinkProps) {
+export function ImageLink({ href, imgSrc, imgAltText, ...rest }: ImageLinkProps) {
     return (
         <Link
             href={href}
@@ -16,7 +17,7 @@ export function ImageLink({ href, imgSrc, ...rest }: ImageLinkProps) {
             _hover={{ transform: "scale(1.1)" }}
             {...rest}
           >
-            <Image src={imgSrc} boxSize="4.125rem" />
+            <Image src={imgSrc} alt={imgAltText} boxSize="4.125rem" />
         </Link>
     )
 }
