@@ -26,6 +26,7 @@ export default function Home() {
             <Text as="h1">
               <Image
                 src="assets/images/blob-logo-new-dark.png"
+                alt="Blob Team logo"
                 w={{ xsm: "44.8125rem", base: "53.775rem", md: "71.7rem" }}
                 h={{ xsm: "15.6875rem", base:"18.825rem", md: "25.1rem" }}
                 draggable="false"
@@ -49,11 +50,11 @@ export default function Home() {
           </Flex>
 
           <VStack position="absolute" left="4" bottom="0" spacing="3.5rem">
-            <ImageLink href="https://github.com/blobteam" imgSrc="assets/icons/github.svg" />
+            <ImageLink href="https://github.com/blobteam" imgAltText="Blob Team GitHub" imgSrc="assets/icons/github.svg" />
 
-            <ImageLink href="https://www.instagram.com/blob.team/" imgSrc="assets/icons/instagram.svg" />
+            <ImageLink href="https://www.instagram.com/blob.team/" imgAltText="Blob Team Instagram" imgSrc="assets/icons/instagram.svg" />
 
-            <ImageLink href="https://www.linkedin.com/company/blobteam" imgSrc="assets/icons/linkedin.svg" />
+            <ImageLink href="https://www.linkedin.com/company/blobteam" imgAltText="Blob Team LinkedIn" imgSrc="assets/icons/linkedin.svg" />
           </VStack>
 
           <VStack position="absolute" bottom="0" right="4" spacing="5rem">

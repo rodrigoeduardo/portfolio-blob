@@ -5,6 +5,7 @@ interface SliderItemProps {
   title: string;
   description: string;
   imgSrc: string;
+  imgAltText: string;
   link?: string;
 }
 
@@ -13,6 +14,7 @@ export function SliderItem({
   title,
   description,
   imgSrc,
+  imgAltText,
   link,
 }: SliderItemProps) {
   return (
@@ -27,6 +29,7 @@ export function SliderItem({
     >
       <Image
         src={imgSrc}
+        alt={imgAltText}
         borderRadius="5rem"
         boxSize={isActive ? '40rem' : '35rem'}
       />

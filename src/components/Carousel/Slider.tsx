@@ -18,6 +18,7 @@ export function Slider() {
             description="Desenvolvido com as tecnologias mais atuais do mercado."
             link="https://ibra.vercel.app"
             imgSrc="assets/images/portfolio/mockup-ibra.svg"
+            imgAltText="Website Ibra preview"
           />
         )}
       </SwiperSlide>
