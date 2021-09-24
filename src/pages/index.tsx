@@ -24,7 +24,12 @@ export default function Home() {
             position="relative"
           >
             <Text as="h1">
-              <Image src="assets/images/blob-logo-new-dark.png" w="717px" h="251px" draggable="false" />
+              <Image
+                src="assets/images/blob-logo-new-dark.png"
+                w={{ xsm: "44.8125rem", base: "53.775rem", md: "71.7rem" }}
+                h={{ xsm: "15.6875rem", base:"18.825rem", md: "25.1rem" }}
+                draggable="false"
+              />
 
               <Text
                 as="span"
