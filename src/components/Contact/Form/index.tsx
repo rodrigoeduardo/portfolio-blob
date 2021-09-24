@@ -42,16 +42,14 @@ export function Form() {
       };
 
       await emailjsApi.post('/email/send', dataRequest);
+
+      toast.success('Sucesso ao enviar o e-mail!');
+      reset();
       
     } catch (error) {
 
       toast.error('Erro ao enviar o e-mail!');
       console.log(error);
-
-    } finally {
-
-      toast.success('Sucesso ao enviar o e-mail!');
-      reset();
 
     }
   };
