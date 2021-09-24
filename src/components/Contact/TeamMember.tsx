@@ -12,7 +12,7 @@ interface TeamMemberProps {
 export function TeamMember({ avatarUrl, name, role, linkedinUrl, githubUrl }: TeamMemberProps) {
     return (
         <Flex>
-            <Avatar w="157px" h="157px" name={name} src={avatarUrl} />
+            <Avatar w="15.7rem" h="15.7rem" name={name} src={avatarUrl} />
 
             <Flex flexDir="column" ml="2.8rem">
                 <Text color="gray.100" fontSize="3.6rem" fontWeight="bold">{name}</Text>
