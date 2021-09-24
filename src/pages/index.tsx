@@ -15,7 +15,7 @@ export default function Home() {
       <Box as="main">
         <Header />
 
-        <Box position="relative" h="78vh" mb="8rem" maxWidth="1440px" marginX="auto">
+        <Box position="relative" h={{ base: "85vh", md: "78vh" }} mb="8rem" maxWidth="80vw" marginX="auto">
           <Flex
             h="100%"
             direction="column"
@@ -24,7 +24,12 @@ export default function Home() {
             position="relative"
           >
             <Text as="h1">
-              <Image src="assets/images/blob-logo-new-dark.png" w="717px" h="251px" draggable="false" />
+              <Image
+                src="assets/images/blob-logo-new-dark.png"
+                w={{ xsm: "44.8125rem", base: "53.775rem", md: "71.7rem" }}
+                h={{ xsm: "15.6875rem", base:"18.825rem", md: "25.1rem" }}
+                draggable="false"
+              />
 
               <Text
                 as="span"
@@ -77,7 +82,7 @@ export default function Home() {
 
         <Box
           id="contato"
-          h="100vh"
+          h={{ base: "", md: "100vh" }}
           marginX="auto"
         >
           <Contact />

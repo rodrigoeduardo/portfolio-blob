@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Image, Button } from '@chakra-ui/react';
+import { Flex, Text, Image, Button } from '@chakra-ui/react';
 
 interface SliderItemProps {
   isActive: boolean;
